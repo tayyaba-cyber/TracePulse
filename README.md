@@ -383,6 +383,6 @@ Released under the **MIT License**. Add a `LICENSE` file to the repository (GitH
 
 Attack knowledge makes better detection. Detection knowledge makes better attacks.
 
-**Made by [Your Name](https://github.com/YOUR-USERNAME)** · ⭐ Star the repo if you found it useful!
+**Made by Tayyaba Ejaz (https://github.com/tayyaba-cyber)** · ⭐ Star the repo if you found it useful!
 
 </div>
