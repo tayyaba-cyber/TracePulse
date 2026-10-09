@@ -1,0 +1,132 @@
+# Wazuh/SOC Home Lab Sample Security Log
+# Synthetic training data — not from real systems.
+# Contains benign events mixed with simulated attack indicators.
+# Fields: timestamp host service severity event key=value details
+# Use for detection, parsing, alerting, dashboards, and investigation practice.
+#
+2026-09-28 08:00:00 host=SOC-WAZUH service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=admin action=web_request
+2026-09-28 08:07:00 host=SOC-WAZUH service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=student action=login_success
+2026-09-28 08:15:00 host=WEB-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=tayyaba action=file_access
+2026-09-28 08:22:00 host=LINUX-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=admin action=file_access
+2026-09-28 08:30:00 host=WIN10-CLIENT01 service=httpd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=analyst action=login_success
+2026-09-28 08:35:00 host=LINUX-SRV01 service=httpd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=tayyaba action=service_check
+2026-09-28 08:42:00 host=LINUX-SRV01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=tayyaba action=service_check
+2026-09-28 08:53:00 host=WIN10-CLIENT01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=analyst action=login_success
+2026-09-28 08:57:00 host=WIN10-CLIENT01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=tayyaba action=file_access
+2026-09-28 09:05:00 host=LINUX-SRV01 service=httpd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=admin action=service_check
+2026-09-28 09:11:00 host=WIN10-CLIENT01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=tayyaba action=web_request
+2026-09-28 09:18:00 host=LINUX-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=student action=service_check
+2026-09-28 09:24:00 host=WEB-SRV01 service=system level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=tayyaba action=service_check
+2026-09-28 09:31:00 host=WEB-SRV01 service=system level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=admin action=file_access
+2026-09-28 09:41:00 host=WEB-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=admin action=service_check
+2026-09-28 09:49:00 host=LINUX-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=student action=web_request
+2026-09-28 09:56:00 host=LINUX-SRV01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=tayyaba action=web_request
+2026-09-28 10:00:00 host=LINUX-SRV01 service=system level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=tayyaba action=file_access
+2026-09-28 10:10:00 host=WIN10-CLIENT01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=tayyaba action=service_check
+2026-09-28 10:15:00 host=SOC-WAZUH service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=admin action=file_access
+2026-09-28 10:20:00 host=WIN10-CLIENT01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=analyst action=service_check
+2026-09-28 10:31:00 host=WEB-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=analyst action=login_success
+2026-09-28 10:38:00 host=WIN10-CLIENT01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=student action=service_check
+2026-09-28 10:43:00 host=WEB-SRV01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=tayyaba action=login_success
+2026-09-28 10:51:00 host=SOC-WAZUH service=system level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=analyst action=web_request
+2026-09-28 10:57:00 host=LINUX-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=analyst action=service_check
+2026-09-28 11:05:00 host=WIN10-CLIENT01 service=system level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=student action=login_success
+2026-09-28 11:10:00 host=WEB-SRV01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=tayyaba action=web_request
+2026-09-28 11:20:00 host=WEB-SRV01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=tayyaba action=web_request
+2026-09-28 11:23:00 host=SOC-WAZUH service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=admin action=service_check
+2026-09-28 11:33:00 host=WEB-SRV01 service=system level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.25 user=analyst action=web_request
+2026-09-28 11:40:00 host=LINUX-SRV01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=analyst action=file_access
+2026-09-28 11:46:00 host=LINUX-SRV01 service=sshd level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=student action=login_success
+2026-09-28 11:51:00 host=LINUX-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.21 user=admin action=web_request
+2026-09-28 11:59:00 host=LINUX-SRV01 service=auth level=INFO event=NORMAL_ACTIVITY srcip=10.0.0.22 user=analyst action=service_check
+2026-09-28 12:10:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=103.77.192.219 srcport=50185 dstport=22 user=root password_authentication_failed=true attempts=3
+2026-09-28 12:12:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=103.77.192.219 srcport=60033 dstport=22 user=root password_authentication_failed=true attempts=4
+2026-09-28 12:14:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=185.220.101.42 srcport=59713 dstport=22 user=root password_authentication_failed=true attempts=5
+2026-09-28 12:16:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=185.220.101.42 srcport=49745 dstport=22 user=admin password_authentication_failed=true attempts=6
+2026-09-28 12:18:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=103.77.192.219 srcport=57913 dstport=22 user=test password_authentication_failed=true attempts=7
+2026-09-28 12:20:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=45.155.205.17 srcport=55141 dstport=22 user=root password_authentication_failed=true attempts=8
+2026-09-28 12:22:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=45.155.205.17 srcport=54418 dstport=22 user=root password_authentication_failed=true attempts=9
+2026-09-28 12:24:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=103.77.192.219 srcport=50690 dstport=22 user=test password_authentication_failed=true attempts=10
+2026-09-28 12:26:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=91.240.118.172 srcport=55861 dstport=22 user=test password_authentication_failed=true attempts=11
+2026-09-28 12:28:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=45.155.205.17 srcport=48222 dstport=22 user=ubuntu password_authentication_failed=true attempts=12
+2026-09-28 12:30:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=45.155.205.17 srcport=43916 dstport=22 user=root password_authentication_failed=true attempts=13
+2026-09-28 12:32:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=91.240.118.172 srcport=43873 dstport=22 user=root password_authentication_failed=true attempts=14
+2026-09-28 12:34:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=103.77.192.219 srcport=58477 dstport=22 user=admin password_authentication_failed=true attempts=15
+2026-09-28 12:36:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=185.220.101.42 srcport=58640 dstport=22 user=root password_authentication_failed=true attempts=16
+2026-09-28 12:38:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=45.155.205.17 srcport=44245 dstport=22 user=root password_authentication_failed=true attempts=17
+2026-09-28 12:40:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=45.155.205.17 srcport=55230 dstport=22 user=root password_authentication_failed=true attempts=18
+2026-09-28 12:42:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=45.155.205.17 srcport=60970 dstport=22 user=root password_authentication_failed=true attempts=19
+2026-09-28 12:44:00 host=LINUX-SRV01 service=sshd level=HIGH event=SSH_BRUTE_FORCE srcip=185.220.101.42 srcport=55737 dstport=22 user=ubuntu password_authentication_failed=true attempts=20
+2026-09-28 13:10:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.94 user=Administrator logon_type=10 status=0xC000006D
+2026-09-28 13:13:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.95 user=Administrator logon_type=10 status=0xC000006D
+2026-09-28 13:16:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.94 user=backup logon_type=10 status=0xC000006D
+2026-09-28 13:19:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.92 user=guest logon_type=10 status=0xC000006D
+2026-09-28 13:22:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.94 user=backup logon_type=10 status=0xC000006D
+2026-09-28 13:25:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.95 user=Administrator logon_type=10 status=0xC000006D
+2026-09-28 13:28:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.90 user=backup logon_type=10 status=0xC000006D
+2026-09-28 13:31:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.99 user=guest logon_type=10 status=0xC000006D
+2026-09-28 13:34:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.91 user=Administrator logon_type=10 status=0xC000006D
+2026-09-28 13:37:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.98 user=Administrator logon_type=10 status=0xC000006D
+2026-09-28 13:40:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.98 user=backup logon_type=10 status=0xC000006D
+2026-09-28 13:43:00 host=WIN10-CLIENT01 service=Security level=MEDIUM event=WINDOWS_FAILED_LOGON event_id=4625 srcip=10.0.0.92 user=backup logon_type=10 status=0xC000006D
+2026-09-28 14:00:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=80 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:00:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=8080 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:01:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=21 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:02:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=22 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:03:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=23 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:03:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=443 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:05:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=25 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:05:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=445 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:09:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=3389 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:10:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=110 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:13:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=53 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:19:00 host=WEB-SRV01 service=firewall level=HIGH event=PORT_SCAN srcip=91.240.118.172 dstip=10.0.0.10 dstport=139 protocol=TCP flags=SYN action=BLOCKED
+2026-09-28 14:50:00 host=WEB-SRV01 service=nginx level=CRITICAL event=SQL_INJECTION_ATTEMPT srcip=45.155.205.17 dstport=443 method=GET uri=/login payload="' OR '1'='1" action=BLOCKED
+2026-09-28 14:54:00 host=WEB-SRV01 service=nginx level=CRITICAL event=SQL_INJECTION_ATTEMPT srcip=45.155.205.17 dstport=443 method=GET uri=/login payload="admin'--" action=BLOCKED
+2026-09-28 14:58:00 host=WEB-SRV01 service=nginx level=CRITICAL event=SQL_INJECTION_ATTEMPT srcip=45.155.205.17 dstport=443 method=GET uri=/login payload="' UNION SELECT username,password FROM users--" action=BLOCKED
+2026-09-28 15:02:00 host=WEB-SRV01 service=nginx level=CRITICAL event=SQL_INJECTION_ATTEMPT srcip=45.155.205.17 dstport=443 method=GET uri=/login payload="1' AND SLEEP(5)--" action=BLOCKED
+2026-09-28 15:06:00 host=WEB-SRV01 service=nginx level=CRITICAL event=SQL_INJECTION_ATTEMPT srcip=45.155.205.17 dstport=443 method=GET uri=/login payload="' OR 1=1#" action=BLOCKED
+2026-09-28 15:20:00 host=WEB-SRV01 service=nginx level=HIGH event=DIRECTORY_TRAVERSAL srcip=185.220.101.42 dstport=80 method=GET uri="/../../../../etc/passwd" http_status=403 action=BLOCKED
+2026-09-28 15:25:00 host=WEB-SRV01 service=nginx level=HIGH event=DIRECTORY_TRAVERSAL srcip=185.220.101.42 dstport=80 method=GET uri="/../../../../etc/passwd" http_status=403 action=BLOCKED
+2026-09-28 15:30:00 host=WEB-SRV01 service=nginx level=HIGH event=DIRECTORY_TRAVERSAL srcip=185.220.101.42 dstport=80 method=GET uri="/../../../../etc/passwd" http_status=403 action=BLOCKED
+2026-09-28 15:35:00 host=WEB-SRV01 service=nginx level=HIGH event=DIRECTORY_TRAVERSAL srcip=185.220.101.42 dstport=80 method=GET uri="/../../../../etc/passwd" http_status=403 action=BLOCKED
+2026-09-28 15:40:00 host=WEB-SRV01 service=nginx level=HIGH event=DIRECTORY_TRAVERSAL srcip=185.220.101.42 dstport=80 method=GET uri="/../../../../etc/passwd" http_status=403 action=BLOCKED
+2026-09-28 15:55:00 host=WIN10-CLIENT01 service=PowerShell level=HIGH event=SUSPICIOUS_POWERSHELL event_id=4104 user=t_admin command="powershell.exe -nop -w hidden -enc <base64_redacted>" parent=winword.exe action=DETECTED
+2026-09-28 16:01:00 host=WIN10-CLIENT01 service=PowerShell level=HIGH event=SUSPICIOUS_POWERSHELL event_id=4104 user=t_admin command="powershell.exe -nop -w hidden -enc <base64_redacted>" parent=winword.exe action=DETECTED
+2026-09-28 16:07:00 host=WIN10-CLIENT01 service=PowerShell level=HIGH event=SUSPICIOUS_POWERSHELL event_id=4104 user=student command="powershell.exe -nop -w hidden -enc <base64_redacted>" parent=winword.exe action=DETECTED
+2026-09-28 16:13:00 host=WIN10-CLIENT01 service=PowerShell level=HIGH event=SUSPICIOUS_POWERSHELL event_id=4104 user=student command="powershell.exe -nop -w hidden -enc <base64_redacted>" parent=winword.exe action=DETECTED
+2026-09-28 16:19:00 host=WIN10-CLIENT01 service=PowerShell level=HIGH event=SUSPICIOUS_POWERSHELL event_id=4104 user=t_admin command="powershell.exe -nop -w hidden -enc <base64_redacted>" parent=winword.exe action=DETECTED
+2026-09-28 16:35:00 host=WEB-SRV01 service=apache level=CRITICAL event=WEB_SHELL_ACTIVITY srcip=103.77.192.219 method=POST uri=/uploads/cmd.php command="whoami" response=200 action=ALERT
+2026-09-28 16:42:00 host=WEB-SRV01 service=apache level=CRITICAL event=WEB_SHELL_ACTIVITY srcip=103.77.192.219 method=POST uri=/uploads/cmd.php command="whoami" response=200 action=ALERT
+2026-09-28 16:49:00 host=WEB-SRV01 service=apache level=CRITICAL event=WEB_SHELL_ACTIVITY srcip=103.77.192.219 method=POST uri=/uploads/cmd.php command="whoami" response=200 action=ALERT
+2026-09-28 16:56:00 host=WEB-SRV01 service=apache level=CRITICAL event=WEB_SHELL_ACTIVITY srcip=103.77.192.219 method=POST uri=/uploads/cmd.php command="whoami" response=200 action=ALERT
+2026-09-28 17:15:00 host=LINUX-SRV01 service=sshd level=CRITICAL event=SUSPICIOUS_SUCCESSFUL_LOGIN srcip=185.220.101.42 srcport=52311 dstport=22 user=root authentication=publickey geo_anomaly=true action=ALERT
+2026-09-28 17:30:00 host=LINUX-SRV01 service=sudo level=CRITICAL event=PRIVILEGE_ESCALATION user=student target=root command="sudo -i" result=SUCCESS action=ALERT
+2026-09-28 17:35:00 host=LINUX-SRV01 service=sudo level=CRITICAL event=PRIVILEGE_ESCALATION user=student target=root command="sudo -i" result=SUCCESS action=ALERT
+2026-09-28 17:40:00 host=LINUX-SRV01 service=sudo level=CRITICAL event=PRIVILEGE_ESCALATION user=www-data target=root command="sudo -i" result=SUCCESS action=ALERT
+2026-09-28 18:00:00 host=LINUX-SRV01 service=network level=HIGH event=SUSPICIOUS_OUTBOUND_CONNECTION srcip=10.0.0.10 dstip=91.240.118.172 dstport=4444 protocol=TCP connection=ESTABLISHED bytes_out=13800 action=ALERT
+2026-09-28 18:08:00 host=LINUX-SRV01 service=network level=HIGH event=SUSPICIOUS_OUTBOUND_CONNECTION srcip=10.0.0.10 dstip=91.240.118.172 dstport=4444 protocol=TCP connection=ESTABLISHED bytes_out=12014 action=ALERT
+2026-09-28 18:16:00 host=LINUX-SRV01 service=network level=HIGH event=SUSPICIOUS_OUTBOUND_CONNECTION srcip=10.0.0.10 dstip=45.155.205.17 dstport=9001 protocol=TCP connection=ESTABLISHED bytes_out=23465 action=ALERT
+2026-09-28 18:24:00 host=LINUX-SRV01 service=network level=HIGH event=SUSPICIOUS_OUTBOUND_CONNECTION srcip=10.0.0.10 dstip=45.155.205.17 dstport=9001 protocol=TCP connection=ESTABLISHED bytes_out=18342 action=ALERT
+2026-09-28 18:40:00 host=WIN10-CLIENT01 service=Sysmon level=CRITICAL event=SUSPICIOUS_FILE_CREATED event_id=11 user=student path="C:\Users\student\AppData\Temp\update_0.exe" sha256=<sample-hash-0> signed=false action=QUARANTINE
+2026-09-28 18:46:00 host=WIN10-CLIENT01 service=Sysmon level=CRITICAL event=SUSPICIOUS_FILE_CREATED event_id=11 user=student path="C:\Users\student\AppData\Temp\update_1.exe" sha256=<sample-hash-1> signed=false action=QUARANTINE
+2026-09-28 18:52:00 host=WIN10-CLIENT01 service=Sysmon level=CRITICAL event=SUSPICIOUS_FILE_CREATED event_id=11 user=student path="C:\Users\student\AppData\Temp\update_2.exe" sha256=<sample-hash-2> signed=false action=QUARANTINE
+2026-09-28 19:10:00 host=WIN10-CLIENT01 service=DNS level=HIGH event=DNS_TUNNELING_INDICATOR srcip=10.0.0.21 query="472e8a47afc9c152b95caf20af89af44f27958dc6c0c8.example.invalid" type=TXT entropy=high query_length=45 action=ALERT
+2026-09-28 19:14:00 host=WIN10-CLIENT01 service=DNS level=HIGH event=DNS_TUNNELING_INDICATOR srcip=10.0.0.21 query="6045dc50a1d8f77d40eb6f247fa8e39a3f609b8da0264.example.invalid" type=TXT entropy=high query_length=45 action=ALERT
+2026-09-28 19:18:00 host=WIN10-CLIENT01 service=DNS level=HIGH event=DNS_TUNNELING_INDICATOR srcip=10.0.0.21 query="95d09834b824f52d405c307ed63f1426954e43b9de6ca.example.invalid" type=TXT entropy=high query_length=45 action=ALERT
+2026-09-28 19:22:00 host=WIN10-CLIENT01 service=DNS level=HIGH event=DNS_TUNNELING_INDICATOR srcip=10.0.0.21 query="936183500c58786d65128bc122f6178081c7167e61d15.example.invalid" type=TXT entropy=high query_length=45 action=ALERT
+2026-09-28 19:40:00 host=WIN10-CLIENT01 service=RDP level=HIGH event=RDP_BRUTE_FORCE event_id=4625 srcip=103.77.192.219 dstport=3389 user=Administrator logon_type=10 attempts=2 action=BLOCKED
+2026-09-28 19:43:00 host=WIN10-CLIENT01 service=RDP level=HIGH event=RDP_BRUTE_FORCE event_id=4625 srcip=103.77.192.219 dstport=3389 user=Administrator logon_type=10 attempts=3 action=BLOCKED
+2026-09-28 19:46:00 host=WIN10-CLIENT01 service=RDP level=HIGH event=RDP_BRUTE_FORCE event_id=4625 srcip=103.77.192.219 dstport=3389 user=Administrator logon_type=10 attempts=4 action=BLOCKED
+2026-09-28 19:49:00 host=WIN10-CLIENT01 service=RDP level=HIGH event=RDP_BRUTE_FORCE event_id=4625 srcip=103.77.192.219 dstport=3389 user=Administrator logon_type=10 attempts=5 action=BLOCKED
+2026-09-28 19:52:00 host=WIN10-CLIENT01 service=RDP level=HIGH event=RDP_BRUTE_FORCE event_id=4625 srcip=103.77.192.219 dstport=3389 user=Administrator logon_type=10 attempts=6 action=BLOCKED
+2026-09-28 19:55:00 host=WIN10-CLIENT01 service=RDP level=HIGH event=RDP_BRUTE_FORCE event_id=4625 srcip=103.77.192.219 dstport=3389 user=Administrator logon_type=10 attempts=7 action=BLOCKED
+2026-09-28 20:10:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=rule_match source=SOC-console
+2026-09-28 20:17:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=log_ingest source=SOC-console
+2026-09-28 20:24:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=log_ingest source=SOC-console
+2026-09-28 20:31:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=log_ingest source=SOC-console
+2026-09-28 20:38:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=alert_review source=SOC-console
+2026-09-28 20:45:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=rule_match source=SOC-console
+2026-09-28 20:52:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=rule_match source=SOC-console
+2026-09-28 20:59:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=rule_match source=SOC-console
+2026-09-28 21:06:00 host=SOC-WAZUH service=wazuh level=INFO event=ANALYST_ACTIVITY user=analyst action=agent_status_check source=SOC-console
